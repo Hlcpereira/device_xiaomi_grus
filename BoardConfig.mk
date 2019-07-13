@@ -7,5 +7,9 @@
 # Inherit from Xiaomi sdm710-common
 include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
+# Partitions
+BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/grus/BoardConfigVendor.mk
