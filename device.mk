@@ -32,6 +32,14 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Device init scripts
+PRODUCT_PACKAGES += \
+    init.target.rc
+
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
