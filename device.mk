@@ -19,3 +19,7 @@ $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
 # Inherit from proprietary version
 $(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
