@@ -28,3 +28,12 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    com.nxp.nfc.nq \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    NQNfcNci \
+    SecureElement \
+    Tag

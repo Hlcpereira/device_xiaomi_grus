@@ -18,5 +18,8 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# NFC
+TARGET_USES_NQ_NFC := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/grus/BoardConfigVendor.mk
